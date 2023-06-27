@@ -1,0 +1,8 @@
+20,22c20,22
+< #def test_string3(hello_world):
+< #  str3 = "Hello world!"
+< #  assert str3 == hello_world
+---
+> def test_string3(hello_world):
+>   str3 = "Hello world!"
+>   assert str3 == hello_world
