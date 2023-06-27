@@ -1,0 +1,13 @@
+20c20
+< def test_string3(hello_world):
+---
+> def test_string3_skip(hello_world):
+21a22
+>   pytest.skip(f'Skipping, since test is intentionally wrong')
+22a24,29
+> 
+> def test_string3_throws(hello_world):
+>   #str3 = "hello, world!"
+>   str3 = "Hello world!"
+>   with pytest.raises(AssertionError) as e_info:
+>     assert str3 == hello_world
